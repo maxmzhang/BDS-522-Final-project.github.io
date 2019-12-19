@@ -1,0 +1,27 @@
+---
+title: "Procedure"
+---
+
+**1. Data Preparation**
+(a) Divided all people into three income groups. (Low income “1”, Medium income “2”, High income “3”). Low income is the wage less than 14400. Medium income is the wage between 14400 and 42000. High income is the wage higher than 42000.
+(b) Drop the people whose age is below 17 years old. Because non-adults’ income data is not persuasive enough for this research.
+(c) Define a new variable “divorce” as 1 if marital status is divorce , and 0 if marital status is other than divorce.
+(d) Report average divorce rate in the sample
+(e) Define a new variable “age group” as 0 (young) if  younger than 50 years old, 1 (old) if  older than 50 years old.
+(f) Define  a new variable “child” as 0 if with no children (the number of children =0), 1 if with children.
+
+**2. Construct logistic regression and make analysis: **find out whether the marital status influence Income. Assumptions of this model are as follows: 
+<br />(a). There exists a linear relationship between the logit of the outcome and each predictor variables. 
+<br />(b). Without influential values in the continuous predictor. 
+<br />(c). No high intercorrelations among the predictors.
+	We set the confidence interval as 95%.  If variable’s p-value less than 0.05, we believe it is significant enough to reject the null hypothesis.
+
+**3. Construct multiple regression and make analysis: **find out whether marital status will be affected by people’s income, age, the number of children. Assumptions of this model are as follows: 
+<br />(a). There exists a linear relationship between the logit of the outcome and each independent predictor variables. 
+<br />(b). No Multicollinearity 
+<br />(c). Homoscedasticity.
+	We set the confidence interval as 95%.  If variable’s  p-value less than 0.05, we believe it is significant enough to reject the null hypothesis.
+	
+**4. Summarize the results and make final conclusion.**
+
+

@@ -1,0 +1,17 @@
+---
+title: "Conclusion"
+---
+
+In accordance with the statistical analysis result above, the realistic studies and facts also support the conclusion that the divorce rate varies with income levels. 
+
+Becker’s theory of divorce (1991) demonstrates that the rising female earnings over time may be partly responsible for increases in the divorce rate. The theory is derived from basic economic theory, stating that if the couples are a high income earner, the gain from marriage is less and they would be able to maintain her standard of living standard after a divorce (Liu& Vikat, 2007). It helps explain why there is a sharp increase in the likelihood of divorce from 9.5376% (low-income group) to 58.4% (median-income group). 
+
+Nevertheless, the IPUMS data analysis gives a surprising result in high-income group. The possibility of divorce even decreases by 3% from median-income group to high-income group, which does not go along with the conclusion and theory above. For married couples, more generous cash transfers may have a stabilization effect and relax financial constraints and less arguments that lead to divorce (Hankins and Hoekstra, 2011). The abnormality could also be explained by the economic theory, income effect, higher family income improves living quality therefore enhances marital stability.
+
+Considering the effect of age, old people’s divorce rate is less correlated with their income level, the divorce probability is between 14% and 16.4%. While young people’s divorce probabilities are more volatile between different income groups, the young people in low-income group has a probability of 5.24% of divorce which is almost 4% lower than median-income group. 
+
+In the current society, old people need more care as well as love, family is the solution to fulfill their personal needs (Trust, 2017). Compared to younger people, old people’s needs on family love is stronger. In addition, older people are facing fewer financial constraints than youngsters due to their accumulated savings. If they are not satisfied with current marriage, divorce is an easy choice for them. Thus, leading to the conclusion that older people’s divorce rate is less affected by income-level.
+ 
+The final factor of income and divorce rate is whether there is a child in the family. According to the divorce statistics 2018, the divorce rate for couples with children is as much as 40 percent lower than for those without children. There is a disputable argument, kids increase divorce risks because they reduced the time for a married couple to focus on themselves or each other. However, it doesn’t coincide with the IPUMS data. The statistical result shows that children bring down the divorce rate in all three income groups. The high-income group is most affected by the existence of children. The probability of divorce in high-income group decrease by 4.4% if there are children in the marriage.
+
+In American family, according to a new Pew Research Center survey, children from richer families enrolled in ballet, soccer and after-school programs, while children from poorer families spend their time at home or grow up in neighborhoods (Miller, 2015). The different upbringings require different inputs and efforts of parents. Therefore, children from high-income families need two parents to “create” a competitive future for them. In low-income family, when the survival problem is above all, the happiness and future of children could not affect that much of parents’ decision to divorce.

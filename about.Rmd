@@ -1,0 +1,38 @@
+---
+title: "Data"
+---
+
+**Variables**
+
+<br /> **YEAR:** The data was collected in 2017
+<br /> **INCTOT:** INCTOT reports each person’s total annual income or losses from all sources in the previous calendar year
+<br /> **NCHILD:** The number of own children residing with each individual. (Including step-children, adopted children, biological children)
+<br /> **AGE:** AGE reports the person’s age in years as of the last birthday
+<br /> **MARST(Marital Status):** 
+<br />1 - Married, spouse presented; 
+<br />2 - Married, spouse absent; 
+<br />3 - Separated; 
+<br />4 - Divorced; 
+<br />5 - Widowed; 
+<br />6 - Never Married
+
+<br /> 
+**Summary Statistic**
+
+<br /> **Income**
+```{r}
+usa2017 <- usa2017 %>% filter(AGE > 17) 
+usa2017 <- usa2017 %>% mutate(divorce = ifelse(MARST == 4, 1, 0))
+usa2017 %>% summarise(Max = max(INCTOT), Min = min(INCTOT), Median = median(INCTOT), Mean = mean(INCTOT), SD = sd(INCTOT))
+```
+
+<br /> **Age**
+```{r}
+usa2017 %>% summarise(Max = max(AGE), Min = min(AGE), Median = median(AGE), Mean = mean(AGE), SD = sd(AGE))
+```
+
+<br /> **Number of Children**
+```{r}
+usa2017 %>% summarise(Max = max(NCHILD), Min = min(NCHILD), Median = median(NCHILD), Mean = mean(NCHILD), SD = sd(NCHILD))
+```
+
