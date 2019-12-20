@@ -17,7 +17,7 @@ The main relationship we are looking at is the income and the likelihood of gett
 On the other hand,  the study of Himmelweit et.al (2013) indicates that unable to reach an agreement in household bargaining is one of the most common reasons for divorce. The increase in total income of a family causes female utility and male utility to increase which means the total gain from marriage increases and there is more space for couples to bargain with. According to Himmelweit’s (2013) theory, income increase should decrease the divorce probability. It is pretty interesting that our analysis supported both theories partially. Therefore, we decided to test the relationship between income and whether people divorce, using the census data from IPUMS US.
 
 
-**Our null hypothesis: Inncome does not affect whether people divorce.***
+***Our null hypothesis: Inncome does not affect whether people divorce.***
 We are also interested in if there are other variables might affect the current association between income and divorce.
 <br />The first dummy variable we introduce is “age”. 
 <br />The second potential factor is “the number of children”
