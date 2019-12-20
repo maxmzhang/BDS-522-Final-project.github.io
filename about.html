@@ -272,7 +272,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Introduction, Literature Review and Hypothesis</a>
+  <a href="index.html">Introduction, Literature review and Hypothesis</a>
 </li>
 <li>
   <a href="about.html">Data</a>
@@ -306,13 +306,12 @@ $(document).ready(function () {
 </div>
 
 
+<p>The data used in this research project is collected from IPUMS USA. There are 3,190,040 people responded to the census in 2017. This is the latest census data set on IPUMS. However, our focus will be the effect of income on the marital status and because of various local laws in different states in the US, we assume that people are allowed to get married (or divorced) at the age of or above 18 years old. One other consideration was that because most people under age 18 did not report their income so IPUMS used 9,999,999 as a substitute of N/A and also most people under 18 were not married. Therefore, we filter data so that only people whose ages are equal or above 18 are being used. Thus, resulting in a total entry of 2,530,726 observations. In addition, the original data set has 6 different marital status and since we are only interested in whether people get married or divorced, so we reclassified the marital status into only 2 classes which are divorced or not divorced.</p>
 <p><strong>Variables</strong></p>
 <p><br /> <strong>YEAR:</strong> The data was collected in 2017 <br /> <strong>INCTOT:</strong> INCTOT reports each person’s total annual income or losses from all sources in the previous calendar year <br /> <strong>NCHILD:</strong> The number of own children residing with each individual. (Including step-children, adopted children, biological children) <br /> <strong>AGE:</strong> AGE reports the person’s age in years as of the last birthday <br /> <strong>MARST(Marital Status):</strong> <br />1 - Married, spouse presented; <br />2 - Married, spouse absent; <br />3 - Separated; <br />4 - Divorced; <br />5 - Widowed; <br />6 - Never Married</p>
 <p><br /> <strong>Summary Statistic</strong></p>
 <p><br /> <strong>Income</strong></p>
-<pre class="r"><code>usa2017 &lt;- usa2017 %&gt;% filter(AGE &gt; 17) 
-usa2017 &lt;- usa2017 %&gt;% mutate(divorce = ifelse(MARST == 4, 1, 0))
-usa2017 %&gt;% summarise(Max = max(INCTOT), Min = min(INCTOT), Median = median(INCTOT), Mean = mean(INCTOT), SD = sd(INCTOT))</code></pre>
+<pre class="r"><code>usa2017 %&gt;% summarise(Max = max(INCTOT), Min = min(INCTOT), Median = median(INCTOT), Mean = mean(INCTOT), SD = sd(INCTOT))</code></pre>
 <pre><code>## # A tibble: 1 x 5
 ##       Max   Min Median   Mean     SD
 ##     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;

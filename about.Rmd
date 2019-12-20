@@ -2,6 +2,8 @@
 title: "Data"
 ---
 
+The data used in this research project is collected from IPUMS USA. There are 3,190,040 people responded to the census in 2017. This is the latest census data set on IPUMS.  However, our focus will be the effect of income on the marital status and because of various local laws in different states in the US, we assume that people are allowed to get married (or divorced) at the age of or above 18 years old. One other consideration was that because most people under age 18 did not report their income so IPUMS used 9,999,999 as a substitute of N/A and also most people under 18 were not married. Therefore, we filter data so that only people whose ages are equal or above 18 are being used. Thus, resulting in a total entry of 2,530,726 observations. In addition, the original data set has 6 different marital status and since we are only interested in whether people get married or divorced, so we reclassified the marital status into only 2 classes which are divorced or not divorced.
+
 **Variables**
 
 <br /> **YEAR:** The data was collected in 2017
@@ -21,8 +23,6 @@ title: "Data"
 
 <br /> **Income**
 ```{r}
-usa2017 <- usa2017 %>% filter(AGE > 17) 
-usa2017 <- usa2017 %>% mutate(divorce = ifelse(MARST == 4, 1, 0))
 usa2017 %>% summarise(Max = max(INCTOT), Min = min(INCTOT), Median = median(INCTOT), Mean = mean(INCTOT), SD = sd(INCTOT))
 ```
 

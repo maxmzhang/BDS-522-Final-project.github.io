@@ -272,7 +272,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Introduction, Literature Review and Hypothesis</a>
+  <a href="index.html">Introduction, Literature review and Hypothesis</a>
 </li>
 <li>
   <a href="about.html">Data</a>
@@ -332,10 +332,10 @@ $(document).ready(function () {
 ## AIC: 1779294
 ## 
 ## Number of Fisher Scoring iterations: 4</code></pre>
-<p>For statistical significance, all the p-value is low enough to reject H0, shows that people who have lower income have less divorced possibility than other income groups. The result is substantive significant on medium and low income people, but the influence on high income people is not substantive significant.</p>
-<p><strong>Odds</strong> <br />The odds of divorced of low-income group is 0.1054, the odds ratio of median-income group is 1.4038, the odds ratio of high income group is 1.2244. The people whose income between $14400 and $42000 has 40.38% higher odds of divorced than people whose income less than $14400. Similarity, people in high income group has 22.44% higher odds of divorced than people in low income group.</p>
+<p>For statistical significance, all the p-values are low enough to reject H0, showing that people who have lower income have less divorce possibility than other income groups. The result is substantive significant on medium and low income people, but the influence on high income people is not substantive significant.</p>
+<p><strong>Odds</strong> <br />The odds of divorce for low-income group is 0.1054, the odds ratio of medium-income group is 1.4038, the odds ratio for high income group is 1.2244. The people whose income between $14400 and $42000 has 40.38% higher odds of divorce than people whose income less than $14400. Similarly, people in high income group has 22.44% higher odds of divorced than people in low income group.</p>
 <p><strong>Probability</strong></p>
-<p><br />For people whose income are less than $14400, the possibility of divorce is 9.5376%, while the median-income group’s people reach the possibility of 58.4%, which is similar to the possibility of high-income group’s people (55.04%).</p>
+<p><br />For people whose income is less than $14400, the possibility of divorce is 9.5376%, while the median-income group’s people reach the possibility of 58.4%, which is similar to the possibility of high-income group’s people (55.04%), although the latter is slightly lower.</p>
 <p><strong><em>H2: The effect of income on whether people divorce might be different for age</em></strong></p>
 <p><strong>Model</strong> <br /> Log(divorced)= β0 + β1 median-income group + β2 high-income group + β3 old +β4 old median-income group +β5 old high-income group <br /> divorced= eβ0 * eβ1 median-income group * eβ2 high-income group <em>eβ3 median-income group </em> eβ4 high-income group *eβ5 high-income group</p>
 <pre class="r"><code>summary(glm(divorce ~ factor(IncomeGroup)*factor(AgeGroup), family = &quot;binomial&quot;))</code></pre>
@@ -373,10 +373,11 @@ $(document).ready(function () {
 ## AIC: 1739732
 ## 
 ## Number of Fisher Scoring iterations: 5</code></pre>
-<p>For statistical significance, all the p-value is low enough to reject H0, shows that the variable of income and age both affect the probability of divorce. The result of adding the “age” variable is substantive significant on all income groups: older people have more likely to divorce.</p>
-<p><strong>Odds</strong> Let young people in the low-income group be the reference group and we can make the following comparisons. Young people with medium income have an odds of divorce that is 77.22% higher than the reference group and young people with high income have an odds of divorce that is 71.97% higher than the reference group. The result of people belong to old group follow the same pattern across three income groups. However, when comparing young people and old people, old people have a higher odds of divorce no matter what income group they belong to.</p>
+<p>For statistical significance, all the p-values are low enough to reject H0, showing that both income and age variables affect the probability of divorce. The p-value of β4 and β5 are close to 0, meaning that the interaction is significant between age groups and income groups in all income-groups. The result of adding the “age” variable is substantive significant for all income groups: older people are more likely to divorce and the interaction between age and income is significant.</p>
+<p><strong>Odds</strong> <br /> Let young people in the low-income group be the reference group and we can make the following comparisons. Young people with medium income have an odds of divorce that is 77.22% higher than the reference group and young people with high income have an odds of divorce that is 71.97% higher than the reference group. The result of people belong to old-age group follows the same pattern across three income groups. However, when comparing young people and old people, old people have a higher odds of divorce no matter what income group they belong to.</p>
 <p><strong>Probability</strong></p>
-<pre class="r"><code>colnames(prob2)&lt;- c(&quot;Low-income group&quot;,&quot;Medium-income group&quot;,&quot;High-income group&quot;)
+<pre class="r"><code>prob2&lt;- matrix(c(0.0524,0.0893,0.0868,0.1493,0.1639,0.1405), ncol=3, byrow=T)
+colnames(prob2)&lt;- c(&quot;Low-income group&quot;,&quot;Medium-income group&quot;,&quot;High-income group&quot;)
 rownames(prob2) &lt;- c(&quot;Young&quot;,&quot;Old&quot;)
 print(prob2)</code></pre>
 <pre><code>##       Low-income group Medium-income group High-income group
@@ -420,16 +421,17 @@ print(prob2)</code></pre>
 ## AIC: 1774308
 ## 
 ## Number of Fisher Scoring iterations: 5</code></pre>
-<p>For statistical significance, all the p-value is low enough to reject H0, shows that the variable of income and children both affect the probability of divorce. The result of adding the “children” variable is substantive significant on high-income groups, while is not substantive significant for low-income group and medium-income group.</p>
-<p><strong>Odds</strong> The people with no child in medium-income group has 40.10% higher odds of divorce for low-income and with no child people. The people with no child in high-income group has 37.84% higher odds of divorce for low-income and with no child people. The people have children in low-income group has 17.84% lower odds of divorce for low-income people without children. The people have children in medium-income group has 19.55% higher odds of divorce for low-income people without children. The people have children in high-income group has 11.89% lower odds of divorce for low-income people without children.</p>
+<p>For statistical significance, all the p-values are low enough to reject H0, showing that both income and children affect the probability of divorce. The p-value of β4 and β5 are close to 0, indicating that the interaction is significant between children and income. By compared the probability difference between whether people have children in each group, the result is substantive significant on high-income group, while is not substantive significant for low-income group and medium-income group, because the probability of divorce only declines 1-2% if low-income group and medium-income group people were raising children.</p>
+<p><strong>Odds</strong> <br /> People with no children in medium-income group has 40.10% higher odds of divorce for low-income and with no child people. People with no children in high-income group has 37.84% higher odds of divorce for low-income and with no child people. People having children in low-income group has 17.84% lower odds of divorce for low-income people without children. People having children in medium-income group has 19.55% higher odds of divorce for low-income people without children. People having children in high-income group has 11.89% lower odds of divorce for low-income people without children.</p>
 <p><strong>Probability</strong></p>
-<pre class="r"><code>colnames(prob3)&lt;- c(&quot;Low-income group&quot;,&quot;Medium-income group&quot;,&quot;High-income group&quot;)
+<pre class="r"><code>prob3&lt;- matrix(c(0.0999,0.1346,0.0868,0.0836,0.1172,0.0891), ncol=3, byrow=T)
+colnames(prob3)&lt;- c(&quot;Low-income group&quot;,&quot;Medium-income group&quot;,&quot;High-income group&quot;)
 rownames(prob3) &lt;- c(&quot;No Child&quot;,&quot;With Child&quot;)
 print(prob3)</code></pre>
 <pre><code>##            Low-income group Medium-income group High-income group
-## No Child             0.0999              0.1346            0.1327
+## No Child             0.0999              0.1346            0.0868
 ## With Child           0.0836              0.1172            0.0891</code></pre>
-<p>As the table shows, for the high-income group, people who have children have lower probability of divorce than people without children in the same group. But for low-income group and medium-income group, the difference is subtle.</p>
+<p>As the table shows, for the high-income group, people who have children have lower probability of divorce than people without children in the same income group. But for low-income group and medium-income group, the difference is subtle.</p>
 
 
 

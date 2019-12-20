@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "BDS522 Final Project"
   left:
-    - text: "Introduction, Literature Review and Hypothesis"
+    - text: "Introduction, Literature review and Hypothesis"
       href: index.html
     - text: "Data"
       href: about.html

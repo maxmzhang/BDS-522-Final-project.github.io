@@ -1,22 +1,26 @@
 ---
-title: "Introduction, Literature Review and Hypothesis"
+title: "The Effect of Income on Whether People Divorce"
+subtitle: "Introduction, Literature Review and Hypothesis"
 ---
 
 ***Introduction***
 
-According to research, Americans in their late 20s have a less than 50% chance of getting divorced. Meanwhile, their chances of staying married are increasing. the US divorce rate began falling in the early 1990s and has since continued on an overall downward trend. There were 4.8 divorces per 1,000 population in 1992 and it dropped to 3.2 in 2016. The falling divorce rate may have a lot to do with millennials’ attitudes toward marriage. Some people argue that it is one of the reflections of young people in the United States rebelling against their parents’ generation. 
-We would like to investigate what factors are contributing or correlating to the change in the divorce rate for this generation. 
+According to research, Americans in their late 20s have a less than 50% chance of getting divorced. Meanwhile, their chances of staying married are increasing. the US divorce rate began falling in the early 1990s and has since continued on an overall downward trend. There were 4.8 people divorced per 1,000 population in 1992 and it dropped to 3.2 people in 2016. The falling divorce rate may be the result of millennials’ attitudes toward marriage. Some people argue that it is one of the reflections that young people in the United States rebelling against their parents’ generation. 
+
+We would like to investigate what factors are contributing or correlating to the change in the divorce rate and how divoce can be explained by taking people’s incomes, ages and whether they have a child into consideration . 
+
 
 ***Literature Review***
 
-The main relationship we are looking into is the income and divorce rate. From an economics perspective, many theoretical and empirical studies of divorce determinants studied the relationship between income and divorce. On the one hand, Becker (1991) provides a social theory that indicates that we have the evolution of the family now.  The meaning of long-term marriage is specialization, insurance, and intergenerational relationship. In traditional society, we need to face uncertainty including information and mortality (Becker, 1991). Family interest is more important than love at that time. In modern society, the market provides efficient substitutes for family function and selection of partners based on personal compatibility rather than family compatibility (Becker, 1991). The consequence of the evolution of the family is the reduction in the gains from marriage and the reinforcement effect, which is reduced fertility and increased divorce (Becker, 1991). Becker’s economic theory of divorce demonstrated that a key variable influencing the divorce rate is women’s earning ability.  In addition, as Becker (1981) pointed out, causality between rising female earnings and the rising divorce rate may run in both directions. 
+The main relationship we are looking at is the income and the likelihood of getting divorced. From an economics perspective, many theoretical and empirical studies of divorce determinants discover the relationship between income and divorce. On the one hand, Becker (1991) provides a social theory indicating that we are having the evolution of the family.  The meaning of a long-term marriage is specialization, insurance, and intergenerational relationship. In traditional society, people face uncertainty including information and mortality (Becker, 1991). Family interest is more important than love at that time since it can provide an insured future. In modern society, the market provides sufficient substitutes that have the functions of a family and selection of partners based on personal compatibility rather than family compatibility (Becker, 1991). This family evolution is reducing the benefit of getting married, and mitigate the reinforcement effect between reducing fertility and increasing divorce(Becker, 1991). Becker’s economic theory of divorce demonstrates a key variable influencing the divorce rate which is women’s earning ability. In addition, as Becker (1981) pointed out, the causality between rising earnings for female and the rising divorce rate may run in both directions.  
 
-On the other hand,  the study of Himmelweit et.al (2013) indicates that unable to reach an agreement in household bargaining is one of the most common reasons for divorce. The total income of a family increase causes female utility and male utility to increase which means their gain to marriage increases and there are more space couples can bargain with. According to Himmelweit’s (2013) theory, income increase should decrease the divorce probability. It is pretty interesting that we had opposite conclusions from two demographic theories. Therefore, we decided to test the relationship between income and whether people divorce, using the data from IPUMS.
+On the other hand,  the study of Himmelweit et.al (2013) indicates that unable to reach an agreement in household bargaining is one of the most common reasons for divorce. The increase in total income of a family causes female utility and male utility to increase which means the total gain from marriage increases and there is more space for couples to bargain with. According to Himmelweit’s (2013) theory, income increase should decrease the divorce probability. It is pretty interesting that our analysis supported both theories partially. Therefore, we decided to test the relationship between income and whether people divorce, using the census data from IPUMS US.
+
 
 **Our null hypothesis: Inncome does not affect whether people divorce.***
 We are also interested in if there are other variables might affect the current association between income and divorce.
-The first dummy variable we introduce is “age”. 
-The second potential factor is “the number of children”
+<br />The first dummy variable we introduce is “age”. 
+<br />The second potential factor is “the number of children”
 
 ***Null hypothesis Summary:***
 <br />**H1:** Income does not affect whether people divorce
